@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, url_for
 from markupsafe import escape
 import pickle
 import numpy as np
@@ -116,7 +116,7 @@ def predict():
 
 @app.route('/aboutus')
 def aboutus():
-    img_url ="https://drive.google.com/uc?id=1NvB5xttWt0-j_dzXh8DiVTx3Ja7Pz7Y_"
+    img_url = url_for('static', filename='this.jpeg')
     return render_template("aboutus.html", img_url=img_url)
 
 
