@@ -1,2 +1,3 @@
-# LoanPredict
-Initial Works. Website/ Website's Design can be changed by members
+**Loan Approval Prediction System**
+
+2nd Year Academic Project
